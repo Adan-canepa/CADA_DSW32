@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+<title>LOGIN</title>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<style>
+{
+  -ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+  background:url(grupo-de-personas-simbolo-de-facebook_318-37229.jpg) repeat fixed;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+}
+
+// Start styles in form
+
+.login{
+  position: relative;
+  top: 50%;
+	width: 250px;
+  display: table;
+  margin: -150px auto 0 auto;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.legend{
+  position: relative;
+  margin-left:40px;
+  width: 50%;
+  display: block;
+  background: #E6FC08;
+  padding: 10px;
+  color: #000;
+  font-size: 40px;
+  
+  &:after{
+    background-size: 100
+    content: "";
+    background-image: url(grupo-de-personas-simbolo-de-facebook_318-37229.jpg);
+    background-repeat: no-repeat;
+    
+  }
+}
+
+.input{
+  position: relative;
+  width: 90%;
+  margin: 15px auto;
+}
+  span{
+    position: absolute;
+    display: block;
+    color: darken(#EDEDED, 10%);
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+  }
+  
+  .input{
+    position: relative;
+  width: 90%;
+  margin: 15px auto;
+  margin-left:0px;
+  
+  span{
+    position: absolute;
+    display: block;
+    color: darken(#EDEDED, 10%);
+    left: 10px;
+    top: 8px;
+    font-size: 20px;
+  }
+    &:focus{
+      padding: 10px 5px 10px 10px;
+      outline: 0;
+      border-color: #FF7052;
+    
+  }
+}
+
+.boton{
+  width: 105px;
+  height: 40px;
+  display:inline;
+  margin: 60px;
+  margin-left:90px;
+   background: #000000;
+  border-radius:0%;
+  border: 1px solid #000;
+  color: #837F7F;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 7px #C3585A;
+  transition: 0.2s ease-out;
+  
+
+  &:hover, &:focus{
+    background: #FF7052;
+    color: #fff;
+    outline: 0;
+  }
+}
+
+.feedback{
+  position: absolute;
+  bottom: -70px;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+  background: #000000;
+  padding: 10px 10px;
+  font-size: 12px;
+  display: none;
+  opacity: 0;
+  
+  &:before{
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(46, 204, 113, 0);
+    border-bottom-color: #00A29F;
+    border-width: 10px;
+    margin-left: -10px;
+    
+  }
+}
+</style>
+
+<body>
+
+<form class="login">
+  
+  <fieldset>
+    
+  	<legend class="legend">Login</legend><br><br>
+    	<input type="email" placeholder="Email" required /><br><br><br>
+        <div class="input">
+        <input type="password" placeholder="Password" required />
+      <span><i class="fa fa-lock"></i></span>
+    </div>
+        	
+
+    
+<br><br>
+<button name="Login" class="boton">LOGIN</button>
+
+    
+  </fieldset>
+  
+ 
+</form>
+</body>
+</html>

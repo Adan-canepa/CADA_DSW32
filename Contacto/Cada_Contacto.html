@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<html lang="es">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Contacto - Script Personal</title>
+ 
+<!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+ 
+</head>
+<style>
+body{
+	background-image:url(315981-blackangel.jpg);
+	background-size: cover;
+	margin-left:30px;
+}
+label{
+	font-size:12px;
+	color:#829305;
+	}
+
+</style>
+<body>
+  <div id="formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+     Nombre
+     <input name="Nombre" type="text" required="required" id="Nombre" placeholder="Nombre" tabindex="1" title="Nombre">
+   <br>
+   <label for="Apellido">Apellido</label>
+   <input name="Apellido" type="Apellido" required="required" id="Apellido" placeholder="Apellido" tabindex="2" title="Email">
+   <br>
+   <label for="Correo">Correo</label>
+   <input name="Correo" type="text" id="Correo" placeholder="Correo" tabindex="3" title="Correo">
+   <br>
+   <label for="Teléfono">Teléfono</label>
+   <input name="Teléfono" type="text" id="Teléfono" placeholder="Teléfono" tabindex="4" title="Teléfono">
+   <br>
+   <label for="Problema">Problema</label>
+   <textarea name="Problema" rows="4" id="Problema" placeholder="Problema" tabindex="6"></textarea>
+   <br>
+   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+</body>
+</html>
